@@ -1,0 +1,42 @@
+<apex:page sideBar="true" showHeader="true">
+
+    <apex:styleSheet value="{!URLFOR($Resource.AboutProjectAndIssueManagement, 'inc/css/AboutProjectAndIssueManagement.css')}"/>
+
+    <h1 id="header" style="display:block;">Project and Issue Management</h1>
+    
+    <div id="leftContainer">
+        <p class="paragraph">With Project and Issue Management for AppExchange, organizations have a 
+        simple framework for prioritizing and managing the logistics of projects and 
+        the resources allocated to them.</p>
+        <p class="paragraph">Project and Issue Management helps organizations keep their projects on track without 
+        making the lives of team members more complicated. This basic application provides a central 
+        location for managing the key aspects of projects, including their status and target completion dates. 
+        Separate Issues and Contacts tabs keep key information within easy reach. Your team can log issues 
+        as they arise, prioritize them, and update their status as appropriate. Built-in reports let 
+        you see open issues by project, projects by stage, and many other categories.</p>
+        
+        <fieldset>
+            <legend>Additional Help and Training</legend>
+            <ul>
+                <li>To learn more about using this application in your environment, contact your Salesforce administrator.</li>
+                <li>For answers to questions about using Salesforce, subscribers can contact customer support by clicking the Help &amp; 
+                Training link within the Salesforce application</li>
+            </ul>
+        </fieldset>     
+    </div>
+
+    <div id="rightContainer">  
+        <h2 class="subTitlle" style="display:block;">The AppExchange</h2>
+        <p class="paragraph">The AppExchange is the world’s first on-demand application-sharing service. 
+        The dozens of pre-built applications and components it offers have been created by salesforce.com 
+        customers, developers, and partners. With these apps, users can do everything from managing expenses 
+        to tracking purchasing to monitoring recruiting. Companies can browse, test drive, and install these 
+        apps into their salesforce.com accounts with a single click.</p>
+        <p class="paragraph">Using the AppExchange, organizations can easily add new apps to their current salesforce.com 
+        deployments, run them alongside their existing on-demand applications, and easily customize them 
+        to meet their unique needs. The breadth of applications on the AppExchange — including CRM and 
+        many other types of business apps — is limited only by the imagination of its publishers and the 
+        on-demand community itself.</p>
+        
+    </div>
+</apex:page>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Issue related to a Project</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>SFDC_Issue_Description__c</fullName>
+        <description>Description of the Issue in detail.</description>
+        <externalId>false</externalId>
+        <label>Issue Description</label>
+        <length>32000</length>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Name</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Priority__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Priority</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1 - Low</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 - Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 - High</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 - Very Urgent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Issue_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>0 - Open</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 - Being Addressed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 - In Escalation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 - Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project__c</fullName>
+        <description>Issues are details of the master project record</description>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>SFDC_Project__c</referenceTo>
+        <relationshipName>R00N40000001QB83EAG</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>R00N40000001QB8AEAW</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <label>Issue</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>SFDC_Issue_Name__c</columns>
+        <columns>SFDC_Issue_Status__c</columns>
+        <columns>SFDC_Issue_Priority__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ISS - {0000}</displayFormat>
+        <label>Issue Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Issues</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SFDC_Issue_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Issue_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Issue_Priority__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

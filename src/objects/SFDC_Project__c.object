@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Project Management</description>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>R00N40000001QB85EAG</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>R00N40000001QB86EAG</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>R00N40000001QB88EAG</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Days_Remaining__c</fullName>
+        <externalId>false</externalId>
+        <formula>SFDC_Project_End_Date__c -  TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days Remaining</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>SFDC_Project_End_Date__c  -  SFDC_Project_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_Manager__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>R00N40000001QB89EAG</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_Name__c</fullName>
+        <description>Descriptive Project Name</description>
+        <externalId>false</externalId>
+        <label>Project Name</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Stage</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Start-up</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closing Down</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Project_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Status_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Status Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <label>Project</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>SFDC_Project_Name__c</columns>
+        <columns>SFDC_Project_Stage__c</columns>
+        <columns>SFDC_Project_Start_Date__c</columns>
+        <columns>SFDC_Project_End_Date__c</columns>
+        <columns>SFDC_Project_Manager__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>x0ActiveProjects</fullName>
+        <columns>SFDC_Project_Name__c</columns>
+        <columns>SFDC_Project_Stage__c</columns>
+        <columns>SFDC_Project_Start_Date__c</columns>
+        <columns>SFDC_Project_End_Date__c</columns>
+        <columns>SFDC_Project_Manager__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SFDC_Project_Stage__c</field>
+            <operation>notEqual</operation>
+            <value>Closing Down</value>
+        </filters>
+        <label>0 - Active Projects</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Project Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Projects</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>SFDC_Project_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Project_Stage__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Project_Start_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Project_End_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SFDC_Project_Manager__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>SFDC_Project_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SFDC_Project_Stage__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SFDC_Project_Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SFDC_Project_End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SFDC_Project_Manager__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>SFDC_Project_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SFDC_Project_Stage__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SFDC_Project_Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SFDC_Project_End_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SFDC_Project_Manager__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>prevent_negative_duration</fullName>
+        <active>true</active>
+        <description>This validation, prevent for a End date less than Star date</description>
+        <errorConditionFormula>SFDC_Project_Start_Date__c &gt; SFDC_Project_End_Date__c</errorConditionFormula>
+        <errorMessage>End Date should be equals or greater than Start Date</errorMessage>
+    </validationRules>
+</CustomObject>
