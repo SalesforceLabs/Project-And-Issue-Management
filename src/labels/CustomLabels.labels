@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AdditionalHelpAndTraining</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Additional Help and Training</shortDescription>
+        <value>Additional Help and Training</value>
+    </labels>
+    <labels>
+        <fullName>ForAnswersToQuestions</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For answers to questions about using Salesforce, subscribers can contact custome</shortDescription>
+        <value>For answers to questions about using Salesforce, subscribers can contact customer support by clicking the Help &amp; 
+                Training link within the Salesforce application</value>
+    </labels>
+    <labels>
+        <fullName>ProjectAndIssueManagement</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Project and Issue Management</shortDescription>
+        <value>Project and Issue Management</value>
+    </labels>
+    <labels>
+        <fullName>ProjectAndIssueManagementHelps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Project and Issue Management helps</shortDescription>
+        <value>Project and Issue Management helps organizations keep their projects on track without 
+        making the lives of team members more complicated. This basic application provides a central 
+        location for managing the key aspects of projects, including their status and target completion dates.</value>
+    </labels>
+    <labels>
+        <fullName>SeparateIssuesAndContactsTabs</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Separate Issues and Contacts tabs keep key information within easy reach</shortDescription>
+        <value>Separate Issues and Contacts tabs keep key information within easy reach. Your team can log issues 
+        as they arise, prioritize them, and update their status as appropriate. Built-in reports let 
+        you see open issues by project, projects by stage, and many other categories.</value>
+    </labels>
+    <labels>
+        <fullName>TheAppExchange</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The AppExchange</shortDescription>
+        <value>The AppExchange</value>
+    </labels>
+    <labels>
+        <fullName>TheAppExchangeIsTheWorlds</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The AppExchange is the world’s first on-demand application-sharing service.</shortDescription>
+        <value>The AppExchange is the world’s first on-demand application-sharing service. 
+        The dozens of pre-built applications and components it offers have been created by salesforce.com 
+        customers, developers, and partners.</value>
+    </labels>
+    <labels>
+        <fullName>TheBreadthOfApplicationsOnTheAppExchange</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The breadth of applications on the AppExchange — including CRM and          man</shortDescription>
+        <value>The breadth of applications on the AppExchange — including CRM and 
+        many other types of business apps — is limited only by the imagination of its publishers and the 
+        on-demand community itself.</value>
+    </labels>
+    <labels>
+        <fullName>ToLearnMoreAboutUsing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To learn more about using this application in your environment, contact your Sal</shortDescription>
+        <value>To learn more about using this application in your environment, contact your Salesforce administrator.</value>
+    </labels>
+    <labels>
+        <fullName>UsingTheAppExchangeOrganizations</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Using the AppExchange, organizations can easily add new apps to their current s</shortDescription>
+        <value>Using the AppExchange, organizations can easily add new apps to their current salesforce.com 
+        deployments, run them alongside their existing on-demand applications, and easily customize them 
+        to meet their unique needs.</value>
+    </labels>
+    <labels>
+        <fullName>WithProjectAndIssue</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>With Project and Issue Management for AppExchange, organizations have a</shortDescription>
+        <value>With Project and Issue Management for AppExchange, organizations have a 
+        simple framework for prioritizing and managing the logistics of projects and 
+        the resources allocated to them.</value>
+    </labels>
+    <labels>
+        <fullName>WithTheseApps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>With these apps, users can do everything from managing expenses          to trac</shortDescription>
+        <value>With these apps, users can do everything from managing expenses 
+        to tracking purchasing to monitoring recruiting. Companies can browse, test drive, and install these 
+        apps into their salesforce.com accounts with a single click.</value>
+    </labels>
+</CustomLabels>

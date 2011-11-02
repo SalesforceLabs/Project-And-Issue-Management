@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Project/Issue Management --></label>
+        <name>ProjectIssueManagement</name>
+    </customApplications>
+    <customLabels>
+        <label>ヘルプとトレーニング</label>
+        <name>AdditionalHelpAndTraining</name>
+    </customLabels>
+    <customLabels>
+        <label>Salesforce にログインした状態で [ヘルプ＆トレーニング] から、カスタマサポートに連絡することができます。</label>
+        <name>ForAnswersToQuestions</name>
+    </customLabels>
+    <customLabels>
+        <label>Project and Issue Management について</label>
+        <name>ProjectAndIssueManagement</name>
+    </customLabels>
+    <customLabels>
+        <label>プロジェクト/課題管理を使うことで、プロジェクトメンバーの無駄な混乱を避けてプロジェクト自体が無駄に複雑化せずに進行させることができます。
+このアプリケーションはステータスやプロジェクト完了日といったプロジェクト管理にとって重要なカスタム項目を提供します。</label>
+        <name>ProjectAndIssueManagementHelps</name>
+    </customLabels>
+    <customLabels>
+        <label>課題タブと取引先責任者タブを分離して重要な情報を近くに置いています。
+課題が発生した時にログを残すことができ、それらに優先度付をして、適切なステータスを割り当てることができます。
+また、レポートを使うことで進行中の課題をプロジェクト順、プロジェクトのステージ順など色々なカテゴリ順で確認することができます。</label>
+        <name>SeparateIssuesAndContactsTabs</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- The AppExchange --></label>
+        <name>TheAppExchange</name>
+    </customLabels>
+    <customLabels>
+        <label>AppExchangeは、世界初のオンデマンドアプリケーション共有サービスです。
+ここで提供されるアプリケーションやコンポーネントは、salesforce.comの顧客、開発者、およびパートナーによって作成されています。</label>
+        <name>TheAppExchangeIsTheWorlds</name>
+    </customLabels>
+    <customLabels>
+        <label>AppExchange上のアプリケーションの幅広さ ― CRMやその他多くのビジネスアプリケーションを含む ― 発表者の想像力とオンデマンドのコミュニティのみが制限されます。</label>
+        <name>TheBreadthOfApplicationsOnTheAppExchange</name>
+    </customLabels>
+    <customLabels>
+        <label>自社組織でのアプリケーションの使用方法の詳細については、Salesforce管理者に連絡してください。</label>
+        <name>ToLearnMoreAboutUsing</name>
+    </customLabels>
+    <customLabels>
+        <label>AppExchangeを使用して、簡単に、使用中のsalesforce.comに新しいアプリケーションを追加し、既存のオンデマンドアプリケーションと並行して実行し、そして組織の固有のニーズに合わせてカスタマイズすることができます。</label>
+        <name>UsingTheAppExchangeOrganizations</name>
+    </customLabels>
+    <customLabels>
+        <label>プロジェクト/課題管理を使うことで、プロジェクトやそこに割り当てられたリソースの管理や優先度付を行うことができます。</label>
+        <name>WithProjectAndIssue</name>
+    </customLabels>
+    <customLabels>
+        <label>これらのアプリケーションでユーザは、購買管理や採用管理といった様々な業務を行うことができます。 
+ユーザはワンクリックで、salesforce.comにこれらのアプリケーションを、参照、テスト、インストールすることができます。</label>
+        <name>WithTheseApps</name>
+    </customLabels>
+    <customTabs>
+        <label>Project/Issue Management について</label>
+        <name>About_Project_Issue_Management</name>
+    </customTabs>
+</Translations>

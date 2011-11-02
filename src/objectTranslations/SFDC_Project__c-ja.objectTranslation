@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC_Project</value>
+    </caseValues>
+    <fields>
+        <label>取引先名</label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- SFDC_Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>取引先責任者</label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- SFDC_Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>商談</label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- SFDC_Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>残りの日数</label>
+        <name>SFDC_Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト期間</label>
+        <name>SFDC_Project_Duration__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト終了日</label>
+        <name>SFDC_Project_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクトマネージャ</label>
+        <name>SFDC_Project_Manager__c</name>
+        <relationshipLabel><!-- SFDC_Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>プロジェクト名</label>
+        <name>SFDC_Project_Name__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト段階</label>
+        <name>SFDC_Project_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Closing Down</masterLabel>
+            <translation>閉鎖</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executing</masterLabel>
+            <translation>実行</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation>計画</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start-up</masterLabel>
+            <translation>始める</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>プロジェクト開始日</label>
+        <name>SFDC_Project_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>プロジェクト状況</label>
+        <name>SFDC_Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完了</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation>進行中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation>予定</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>状況の説明</label>
+        <name>SFDC_Status_Description__c</name>
+    </fields>
+    <layouts>
+        <layout>Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Logistics --></label>
+            <section>Logistics</section>
+        </sections>
+        <sections>
+            <label><!-- Project-Related Information --></label>
+            <section>Project-Related Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Description --></label>
+            <section>Status Description</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>終了日は、開始日より大きいか等しい必要があります。</errorMessage>
+        <name>prevent_negative_duration</name>
+    </validationRules>
+</CustomObjectTranslation>
