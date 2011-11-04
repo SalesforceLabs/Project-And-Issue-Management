@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SFDC_Issue</value>
+    </caseValues>
+    <fields>
+        <label>説明</label>
+        <name>SFDC_Issue_Description__c</name>
+    </fields>
+    <fields>
+        <label>問題名</label>
+        <name>SFDC_Issue_Name__c</name>
+    </fields>
+    <fields>
+        <label>優先度</label>
+        <name>SFDC_Issue_Priority__c</name>
+        <picklistValues>
+            <masterLabel>1 - Low</masterLabel>
+            <translation>低</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Medium</masterLabel>
+            <translation>中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - High</masterLabel>
+            <translation>高</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Very Urgent</masterLabel>
+            <translation>急</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>状況</label>
+        <name>SFDC_Issue_Status__c</name>
+        <picklistValues>
+            <masterLabel>0 - Open</masterLabel>
+            <translation>オープン</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 - Being Addressed</masterLabel>
+            <translation>対応</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - In Escalation</masterLabel>
+            <translation>拡大</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Closed</masterLabel>
+            <translation>完了</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>プロジェクト名</label>
+        <name>SFDC_Project__c</name>
+        <relationshipLabel><!-- SFDC_Issue --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>問題 所有者</label>
+        <name>User__c</name>
+        <relationshipLabel><!-- SFDC_Issue --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Issue Layout</layout>
+        <sections>
+            <label>説明</label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
